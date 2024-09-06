@@ -22,11 +22,8 @@ def get_data(config_file):
 
 
 if __name__ == '__main__':
-    print('starting')
     args = argparse.ArgumentParser()
-
     args.add_argument("--config", "-c", default="config/config.yaml")
-
     parsed_args = args.parse_args()
 
     get_data(config_file=parsed_args.config)
